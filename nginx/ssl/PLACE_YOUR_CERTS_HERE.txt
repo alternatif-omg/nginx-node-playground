@@ -1,0 +1,17 @@
+## SSL Setup
+Pastikan Anda membuat sertifikat SSL sebelum menjalankan project:
+
+```bash
+mkdir -p nginx/ssl
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+  -keyout nginx/ssl/nginx-selfsigned.key \
+  -out nginx/ssl/nginx-selfsigned.crt
+
+
+Taruh file sertifikat SSL Anda di folder ini:
+- nginx-selfsigned.crt
+- nginx-selfsigned.key
+
+
+
+
