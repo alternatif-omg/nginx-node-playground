@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Docker
+*.pid
+*.seed
+*.tmp
+
+# SSL Certificates (jangan kalau self-signed public learning, tapi kalau real project WAJIB exclude)
+nginx/nginx-certs/
+
+# Env files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

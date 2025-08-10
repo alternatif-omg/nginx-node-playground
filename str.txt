@@ -1,0 +1,15 @@
+project-root/
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── Dockerfile
+│   └── images/
+├── nginx/
+│   ├── nginx.conf
+│   └── nginx-certs/
+│       ├── nginx-selfsigned.crt
+│       └── nginx-selfsigned.key
+├── docker-compose.yaml
+├── index.html
+└── .gitignore
