@@ -19,6 +19,8 @@ nginx/ssl/*.key
 # Env files
 .env
 
+str.txt
+
 # OS files
 .DS_Store
 Thumbs.db
