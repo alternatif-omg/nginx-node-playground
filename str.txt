@@ -4,12 +4,16 @@ project-root/
 │   ├── package.json
 │   ├── package-lock.json
 │   ├── Dockerfile
+├── frontend/
+│   ├── index.html
 │   └── images/
+│       ├── example1.png
+│       └── example2.jpg
 ├── nginx/
 │   ├── nginx.conf
-│   └── nginx-certs/
+│   └── ssl/
 │       ├── nginx-selfsigned.crt
 │       └── nginx-selfsigned.key
 ├── docker-compose.yaml
-├── index.html
-└── .gitignore
+├── .gitignore
+└── .dockerignore

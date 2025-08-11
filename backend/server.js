@@ -1,16 +1,17 @@
 const express = require('express');
-const path = require('path');
 const app = express();
-const port = 3000;
 
+const port = process.env.PORT || 3000;
+const appName = process.env.APP_NAME || "My App";
 
-const appName = process.env.APP_NAME
+// API example
+app.get('/api', (req, res) => {
+    res.json({ message: `Hello from ${appName}` });
+});
 
-app.use('/images', express.static(path.join(__dirname, 'images')));
-
-app.use('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-    console.log(`Request served by ${appName}`);
+// Health check
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
 });
 
 app.listen(port, () => {
